@@ -6,10 +6,10 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div>
-        <NavBar></NavBar>
       <div className="global-wrapper" >
         <main>{children}</main>
       </div>
+        <NavBar></NavBar>
     </div>
   )
 }
