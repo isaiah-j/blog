@@ -1,231 +1,40 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: My experience at Lambda School
+date: "2020-12-29T22:12:03.284Z"
+description: "After spending 7 months going through an intense programming curriculum, was it worth it?"
 ---
 
-This is my first post on my new fake blog! How exciting!
+Lambda School is a tech bootcamp designed to get you in the industry as quicky as possible.
+Here are the experiences I've gathered being an alumni
 
-I'm sure I'll write a lot more interesting things in the future.
+# The Good
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+LS at it's core is an environment designed to teach you how to be pragmatic while giving you all the tools you need to be successful in the real world. 
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+### Curriculum
 
-![Chinese Salty Egg](./salty_egg.jpg)
+I'll start off by saying the curriculum is great. You'll learn React, PostgresQL , NodeJS (or Java) on top of the basics of web design and python. It covers everything you need to land an entry - midlevel position as a developer and it's layed out in a way that mimics the real world. The projects will often include a task that requires additional research in order to complete it. It was a struggle to get through the modules at times, but it taught me how to learn effectively while skyrocketing my problem solving skills.
 
-You can also write code blocks here!
+### Instructors
 
-```js
-const saltyDuckEgg = "chinese preserved food product"
-```
+The instructors are very consistent and teach the material *well*. Most of the instructors have a lot of experience and you often get interesting advice and tidbits that will help you out while programming. You also have the option to view lectures from the instructures if you don't find your current teacher up to par.
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
+### Career Support
 
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
+It's no surprise that a company with this business model would have excellent career support. 
+From LinkedIn/Resume reviews to mock interviews you will be ready to start interviewing at the end of Lambda. 
 
-This is a paragraph.
+# The Bad
 
-    This is a paragraph.
+### Disorganization
 
-# Header 1
+Lambda School loves to move at an extremely fast pace, constantly innovate and try new things. Although it keeps the curriculum ahead of the curve, management isn't able to keep up and there's been a ton of blunders as a side effect. Some students have been forced to retake months of the curriculum from assignments that weren't received making it extremely discouraging at times. During most of my team projects we were missing vital roles due to poor management and were almost forces to retake the project because of it. It added unnecessary stress to an already stressful environemt and I believe it could have been avoided with better communication.
 
-## Header 2
+### Communication
 
-    Header 1
-    ========
+You never actually know what's going on. With policies changing days after being implemented not even the staff can keep up with the changes. This makes communication extraordinarily difficult since changes aren't communicated thorougly to students. This wasn't a problem until recently, before LS had team leads that would manage a small group of students and they were your main resource for help. Information/changes would elegantly trickly down from upper management to the team leads and finally down to the students.
 
-    Header 2
-    --------
+# Summary
 
-# Header 1
+Overall, Lambda School has transformed me into a competent developer that's able to think outside the box in order to solve problems.
 
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1
-    ## Header 2
-    ### Header 3
-    #### Header 4
-    ##### Header 5
-    ###### Header 6
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1 #
-    ## Header 2 ##
-    ### Header 3 ###
-    #### Header 4 ####
-    ##### Header 5 #####
-    ###### Header 6 ######
-
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> ## This is a header.
->
-> 1. This is the first list item.
-> 2. This is the second list item.
->
-> Here's some example code:
->
->     Markdown.generate();
-
-    > ## This is a header.
-    > 1. This is the first list item.
-    > 2. This is the second list item.
-    >
-    > Here's some example code:
-    >
-    >     Markdown.generate();
-
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-
-```markdown
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-```
-
-- `code goes` here in this line
-- **bold** goes here
-
-```markdown
-- `code goes` here in this line
-- **bold** goes here
-```
-
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-
-```markdown
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-```
-
-1. `code goes` here in this line
-1. **bold** goes here
-
-```markdown
-1. `code goes` here in this line
-1. **bold** goes here
-```
-
-Paragraph:
-
-    Code
-
-<!-- -->
-
-    Paragraph:
-
-        Code
-
----
-
----
-
----
-
----
-
----
-
-    * * *
-
-    ***
-
-    *****
-
-    - - -
-
-    ---------------------------------------
-
-This is [an example](http://example.com "Example") link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
-
-    This is [an example](http://example.com "Example") link.
-
-    [This link](http://example.com) has no title attr.
-
-    This is [an example] [id] reference-style link.
-
-    [id]: http://example.com "Optional Title"
-
-_single asterisks_
-
-_single underscores_
-
-**double asterisks**
-
-**double underscores**
-
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-
-This paragraph has some `code` in it.
-
-    This paragraph has some `code` in it.
-
-![Alt Text](https://placehold.it/200x50 "Image Title")
-
-    ![Alt Text](https://placehold.it/200x50 "Image Title")

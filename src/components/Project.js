@@ -36,10 +36,8 @@ const useStyles = makeStyles({
 });
 
 const Project = ({ title, description, github, imgURL, website }) => {
-	console.log(website);
 	const classes = useStyles();
 	const matches = useMediaQuery('(width: 320px)');
-	console.log(matches);
 	return (
 		<Card className={classes.root} className="card">
 			<CardActionArea>

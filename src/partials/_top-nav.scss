@@ -19,3 +19,23 @@
 .artifact{
     color: #eeeeee;
 }
+
+
+@media(max-width: 1150px){
+    .career-artifacts{
+        width: 40%;
+    }
+}
+
+@media(max-width: 630px){
+
+    .top-nav-container{
+        justify-content: center;
+    }
+    
+    .career-artifacts{
+        width: 80%;
+    }
+
+
+}
