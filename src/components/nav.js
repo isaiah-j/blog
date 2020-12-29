@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -11,7 +11,6 @@ import CodeIcon from '@material-ui/icons/Code';
 import GavelRoundedIcon from '@material-ui/icons/GavelRounded';
 import HomeIcon from '@material-ui/icons/Home';
 import AddIcCallIcon from '@material-ui/icons/AddIcCall';
-import { useNavigate } from "@reach/router"
 
     const useStyles = makeStyles((theme) => ({
         appBar: {
@@ -24,7 +23,6 @@ const NavBar = () => {
 
     const [value, setValue] = useState(0);
     const classes = useStyles();
-    const navigate = useNavigate()
 
     return (
         <div className='navbar-container'>
@@ -37,11 +35,11 @@ const NavBar = () => {
                     showLabels
                     className={classes.appBar}
                 >
-                    <BottomNavigationAction onClick={() => navigate('/')} className={value == 0 ? 'selected' : 'icon'} label="Home" icon={<HomeIcon />}></BottomNavigationAction>
+                    <BottomNavigationAction value='0' onClick={() => navigate('/')} className={value == 0 ? 'selected' : 'icon'} label="Home" icon={<HomeIcon />}></BottomNavigationAction>
                     
-                    <BottomNavigationAction onClick={() => navigate('/projects')} className={value == 1 ? 'selected' : 'icon'} label="Projects" icon={<GavelRoundedIcon />}></BottomNavigationAction>
+                    <BottomNavigationAction value='1' onClick={() => navigate('/portfolio')} className={value == 1 ? 'selected' : 'icon'} label="Portfolio" icon={<GavelRoundedIcon />}></BottomNavigationAction>
 
-                    <BottomNavigationAction onClick={() => navigate('/contact')} className={value == 2 ? 'selected' : 'icon'} label="Contact" icon={<AddIcCallIcon />} />
+                    <BottomNavigationAction value='2' onClick={() => navigate('/contact')} className={value == 2 ? 'selected' : 'icon'} label="Contact" icon={<AddIcCallIcon />} />
                 </BottomNavigation>
             
         </div>

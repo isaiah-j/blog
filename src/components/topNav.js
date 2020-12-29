@@ -6,11 +6,10 @@ const TopNavigation = () => {
         <navbar className='top-nav-container'>
             <Link to='/blog'>Blog</Link>
             <div className='career-artifacts'>
-                <Link>
-                    <a href='../../static/resume.pdf' download>Resume</a>
-                </Link>
-                <div>GitHub</div>
-                <div>LinkedIn</div>
+                <a href='https://github.com/isaiah-j' target='_blank' className='artifact'>GitHub</a>
+                <a className='artifact' href='https://isaiah-j.github.io/resume/resume.pdf' target='_blank'>LinkedIn</a>
+                
+                <a href='https://isaiah-j.github.io/resume/resume.pdf' target='_blank'>Resume</a>
             </div>
         </navbar>
     )

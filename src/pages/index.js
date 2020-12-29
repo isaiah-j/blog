@@ -6,9 +6,17 @@ const Index = ({ location }) => {
 
   return (
       <Layout location={location}>
-        <h1>
-            <Link to='/blog'>Gatsby</Link>
-        </h1>
+          <div className="header-container">
+			    <div id='middle' >
+					<h1 >
+						Isaiah Fowler
+					</h1>
+
+					<h2>
+						Web Developer / Designer / Penetration Tester
+					</h2>
+			</div>
+		</div>
       </Layout>
   )
 }
