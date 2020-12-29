@@ -20,26 +20,30 @@ import { useNavigate } from "@reach/router"
     }));
 
 const NavBar = () => {
+
+
     const [value, setValue] = useState(0);
     const classes = useStyles();
     const navigate = useNavigate()
 
     return (
         <div className='navbar-container'>
-            <BottomNavigation
-                value={value}
-                onChange={(event, newValue) => {
-                    setValue(newValue);
-                }}
-                showLabels
-                className={classes.appBar}
-            >
-                <BottomNavigationAction onClick={() => navigate('/')} className={value == 0 ? 'selected' : 'icon'} label="Home" icon={<HomeIcon />}></BottomNavigationAction>
-                
-                <BottomNavigationAction onClick={() => navigate('/projects')} className={value == 1 ? 'selected' : 'icon'} label="Projects" icon={<GavelRoundedIcon />}></BottomNavigationAction>
+            
+                <BottomNavigation
+                    value={value}
+                    onChange={(event, newValue) => {
+                        setValue(newValue);
+                    }}
+                    showLabels
+                    className={classes.appBar}
+                >
+                    <BottomNavigationAction onClick={() => navigate('/')} className={value == 0 ? 'selected' : 'icon'} label="Home" icon={<HomeIcon />}></BottomNavigationAction>
+                    
+                    <BottomNavigationAction onClick={() => navigate('/projects')} className={value == 1 ? 'selected' : 'icon'} label="Projects" icon={<GavelRoundedIcon />}></BottomNavigationAction>
 
-                <BottomNavigationAction onClick={() => navigate('/contact')} className={value == 2 ? 'selected' : 'icon'} label="Contact" icon={<AddIcCallIcon />} />
-            </BottomNavigation>
+                    <BottomNavigationAction onClick={() => navigate('/contact')} className={value == 2 ? 'selected' : 'icon'} label="Contact" icon={<AddIcCallIcon />} />
+                </BottomNavigation>
+            
         </div>
     )
 }

@@ -9,7 +9,7 @@ export default () => {
                 params={{
                     particles: {
                         number: {
-                            value: 160,
+                            value: 220,
                             density: {
                                 enable: true,
                                 value_area: 4000
@@ -77,17 +77,6 @@ export default () => {
                     },
                     interactivity: {
                         detect_on: "canvas",
-                        events: {
-                            onhover: {
-                                enable: false,
-                                mode: "bubble"
-                            },
-                            onclick: {
-                                "enable": false,
-                                "mode": "repulse"
-                            },
-                            resize: true
-                        },
                         modes: {
                             grab: {
                                 distance: 400,
@@ -119,5 +108,5 @@ export default () => {
                 }
             />
         </div>
-    )
+        )
 }
