@@ -7,8 +7,7 @@ const TopNavigation = () => {
             <Link to='/blog'>Blog</Link>
             <div className='career-artifacts'>
                 <a href='https://github.com/isaiah-j' target='_blank' className='artifact'>GitHub</a>
-                <a className='artifact' href='https://isaiah-j.github.io/resume/resume.pdf' target='_blank'>LinkedIn</a>
-                
+                <a className='artifact' href='https://www.linkedin.com/in/isaiah-fowler/' target='_blank'>LinkedIn</a>
                 <a href='https://isaiah-j.github.io/resume/resume.pdf' target='_blank'>Resume</a>
             </div>
         </navbar>

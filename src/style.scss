@@ -3,6 +3,27 @@ body{
   color: rgb(223, 223, 223) !important
 }
 
+.form-container{
+  margin-top: 4rem;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-field-containers{
+  display: grid;
+  grid-gap: 2rem;
+  width: 35%;
+}
+
+#submit-btn{
+  border: 1px solid #1fad37;
+  color: #1fad37;
+  &:hover{
+      background-color: #1fad3721;
+  }
+}
+
 @import './partials/portfolio';
 @import './partials/top-nav';
 @import './partials/particles';

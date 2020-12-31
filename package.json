@@ -8,8 +8,10 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
+    "antd": "^4.9.4",
     "axios": "^0.21.1",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
