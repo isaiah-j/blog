@@ -3,6 +3,15 @@ import { TextField, Button } from '@material-ui/core'
 import Layout from '../components/layout'
 import axios from 'axios'
 
+
+import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    color: "white",
+  }
+}));
+
 const Contact = ({ location }) => {
 
     const [loading, setLoading] = useState(false)
@@ -52,14 +61,20 @@ const Contact = ({ location }) => {
 
     return (
         <Layout location={location}>
-            <div className='form-container'>
+            <form className='form-container' onSubmit={handleSubmit}>
                 <div className='text-field-containers'>
-                    <TextField value={formValues.name} onChange={handleChange} color='secondary' type='text' label='Name' name='name' required></TextField>
-                    <TextField value={formValues.email} onChange={handleChange} color='secondary' type='text' label='Email' name='email' required></TextField>
-                    <TextField multiline rows={8} value={formValues.message} onChange={handleChange} color='secondary' type='text' label='How can I make your life easier?' name='message' required></TextField>
-                    <Button onClick={handleSubmit} color='secondary' variant='outlined' >Submit</Button>
+                    <TextField InputLabelProps={{
+                        style: {color: '#ff3232'}
+                    }} value={formValues.name} onChange={handleChange} color='secondary' type='text' label='Name' name='name' required></TextField>
+                    <TextField InputLabelProps={{
+                        style: {color: '#ff3232'}
+                    }} value={formValues.email} onChange={handleChange} color='secondary' type='email' label='Email' name='email' required></TextField>
+                    <TextField InputLabelProps={{
+                        style: {color: '#ff3232'}
+                    }} multiline rows={8} value={formValues.message} onChange={handleChange} color='secondary' type='text' label='How can I make your life easier?' name='message' required></TextField>
+                    <Button style={{color : '#ff3232', borderColor: '#ff3232'}} type='submit' color='secondary' variant='outlined' >Submit</Button>
                 </div>
-            </div>
+            </form>
         </Layout>
     )
 }

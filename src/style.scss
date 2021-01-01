@@ -8,6 +8,7 @@ body{
    display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .text-field-containers{
@@ -15,6 +16,18 @@ body{
   grid-gap: 2rem;
   width: 35%;
 }
+@media(max-width: 930px){
+  .text-field-containers{
+    width: 50%;
+  }
+}
+
+@media(max-width: 630px){
+  .text-field-containers{
+    width: 65%;
+  }
+}
+
 
 #submit-btn{
   border: 1px solid #1fad37;
