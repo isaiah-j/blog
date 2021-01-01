@@ -8,7 +8,6 @@ const Portfolio = ({location}) => {
     const [projects, setProjects] = useState(projectData)
 
     return (
-        <Layout location={location}>
             <div className='project-list-container'>
                 <div className='project-list'>
                     {
@@ -27,7 +26,6 @@ const Portfolio = ({location}) => {
                     }
                 </div>
             </div>
-        </Layout>
     )
 }
 

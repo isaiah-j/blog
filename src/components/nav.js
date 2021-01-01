@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { navigate } from "gatsby"
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,6 +11,7 @@ import CodeIcon from '@material-ui/icons/Code';
 import GavelRoundedIcon from '@material-ui/icons/GavelRounded';
 import HomeIcon from '@material-ui/icons/Home';
 import AddIcCallIcon from '@material-ui/icons/AddIcCall';
+import {updateBottomAppBarValue} from '../redux/actions'
 
     const useStyles = makeStyles((theme) => ({
         appBar: {
@@ -20,17 +21,16 @@ import AddIcCallIcon from '@material-ui/icons/AddIcCall';
 
 const NavBar = () => {
 
+    const [value, setValue] = useState(0)
 
-    const [value, setValue] = useState(0);
     const classes = useStyles();
 
     return (
         <div className='navbar-container'>
-            
                 <BottomNavigation
                     value={value}
                     onChange={(event, newValue) => {
-                        setValue(newValue);
+                        setValue(newValue)
                     }}
                     showLabels
                     className={classes.appBar}

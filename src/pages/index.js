@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 const Index = ({ location }) => {
 
   return (
-      <Layout location={location}>
+
           <div className="header-container">
 			    <div id='middle' >
 					<h1 >
@@ -13,11 +13,10 @@ const Index = ({ location }) => {
 					</h1>
 
 					<h2>
-						Web Developer / Designer / Penetration Tester
+						Web Developer / Designer / Tech Enthusiast
 					</h2>
 			</div>
 		</div>
-      </Layout>
   )
 }
 

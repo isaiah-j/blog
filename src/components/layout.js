@@ -4,24 +4,28 @@ import NavBar from './nav'
 import Particles from './particles'
 import TopNav from '../components/topNav'
 
+const pathsWithLayout = [
+  '/',
+  '/contact',
+  '/portfolio'
+]
+
+
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const blogPath = `${__PATH_PREFIX__}/blog`
-  const isBlogPath = location.pathname === blogPath
-  const isRootPath = location.pathname === rootPath
+
   return (
     <div>
       <Particles />
       {
-        isBlogPath ?
-        ''
-        :
+        pathsWithLayout.includes(location.pathname) ?
         <div>
           <TopNav />
           <NavBar />
         </div>
+        :
+        ''
       }
-      <div className={isRootPath ? '': ''} >
+      <div  >
         <main>{children}</main>
       </div>
     </div>
