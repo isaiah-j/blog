@@ -27,7 +27,7 @@ const Contact = ({ location }) => {
         const mailOptions = {
             name: formValues.name,
             email: formValues.email,
-            message: formValues.description
+            message: formValues.message
         }
 
         console.log(mailOptions)
@@ -35,7 +35,7 @@ const Contact = ({ location }) => {
         setFormValues({
             name: '',
             email: '',
-            description: ''
+            message: ''
         })
 
         setLoading(true)
@@ -56,7 +56,7 @@ const Contact = ({ location }) => {
                 <div className='text-field-containers'>
                     <TextField value={formValues.name} onChange={handleChange} color='secondary' type='text' label='Name' name='name' required></TextField>
                     <TextField value={formValues.email} onChange={handleChange} color='secondary' type='text' label='Email' name='email' required></TextField>
-                    <TextField multiline rows={8} value={formValues.description} onChange={handleChange} color='secondary' type='text' label='How can I make your life easier?' name='description' required></TextField>
+                    <TextField multiline rows={8} value={formValues.message} onChange={handleChange} color='secondary' type='text' label='How can I make your life easier?' name='message' required></TextField>
                     <Button onClick={handleSubmit} color='secondary' variant='outlined' >Submit</Button>
                 </div>
             </div>
