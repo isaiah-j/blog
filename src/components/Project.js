@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Link } from '@material-ui/core';
 
@@ -18,6 +18,11 @@ import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
 import Icon from '@material-ui/core/Icon';
 import SaveIcon from '@material-ui/icons/Save';
 
+import MoreVertIcon from '@material-ui/icons/MoreVert'
+
+
+import CardHeader from '@material-ui/core/CardHeader'
+
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import ComputerIcon from '@material-ui/icons/Computer';
@@ -32,12 +37,20 @@ const useStyles = makeStyles({
 	media: {
 		clipPath: 'polygon(0 0, 100% 0, 100% 80%, 0 100%)',
 		maxHeight: 300
-	}
+	},
+	expand: {
+		transform: 'rotate(0deg)',
+		marginLeft: '6rem',
+	},
 });
+
+
+
 
 const Project = ({ title, description, github, imgURL, website }) => {
 	const classes = useStyles();
 	const matches = useMediaQuery('(width: 320px)');
+
 	return (
 		<Card className={classes.root} className="card">
 			<CardActionArea>
@@ -70,6 +83,7 @@ const Project = ({ title, description, github, imgURL, website }) => {
 					</Link>
 				</Button>
 			</CardActions>
+
 		</Card>
 	);
 };

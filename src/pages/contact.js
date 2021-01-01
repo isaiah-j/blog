@@ -71,7 +71,9 @@ const Contact = ({ location }) => {
                     }} InputProps={{
                         style: {color: 'white'}
                     }} value={formValues.name} onChange={handleChange} color='secondary' type='text' label='Name' name='name' required></TextField>
-                    <TextField InputLabelProps={{
+                    <TextField InputProps={{
+                        style: {color: 'white'}
+                    }} InputLabelProps={{
                         style: {color: '#ff3232'}
                     }} value={formValues.email} onChange={handleChange} color='secondary' type='email' label='Email' name='email' required></TextField>
                     <TextField InputProps={{
